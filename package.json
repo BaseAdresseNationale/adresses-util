@@ -1,0 +1,35 @@
+{
+  "name": "@etalab/adresses-util",
+  "version": "0.0.0",
+  "description": "Utilitaires pour traitement des adresses",
+  "main": "index.js",
+  "repository": "git@github.com:etalab/adresses-util.git",
+  "author": "Jérôme Desboeufs <jerome.desboeufs@data.gouv.fr>",
+  "license": "MIT",
+  "private": false,
+  "publishConfig": {
+    "access": "public"
+  },
+  "scripts": {
+    "test": "xo && ava"
+  },
+  "dependencies": {
+    "@etalab/fantoir-parser": "^0.1.1",
+    "keyv": "^3.1.0",
+    "leven": "^2.1.0",
+    "lodash": "^4.17.11",
+    "talisman": "^0.21.0",
+    "written-number": "^0.8.1"
+  },
+  "devDependencies": {
+    "ava": "^1.0.1",
+    "xo": "^0.23.0"
+  },
+  "xo": {
+    "semicolon": false,
+    "space": 2
+  },
+  "engines": {
+    "node": ">= 8"
+  }
+}
