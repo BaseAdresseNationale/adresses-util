@@ -11,14 +11,30 @@
     "access": "public"
   },
   "scripts": {
+    "merge": "node bin/merge.js",
     "test": "xo && ava"
   },
   "dependencies": {
+    "@etalab/cog": "^0.1.0",
     "@etalab/fantoir-parser": "^0.1.1",
+    "@keyv/sqlite": "^2.0.0",
+    "@turf/distance": "^6.0.1",
+    "bluebird": "^3.5.3",
+    "buffer-to-stream": "^1.0.0",
+    "csv-parser": "^2.1.0",
+    "decompress": "^4.2.0",
+    "dotenv": "^6.2.0",
+    "fs-extra": "^7.0.1",
+    "geojson-stream": "^0.1.0",
+    "get-stream": "^4.1.0",
+    "gunzip-stream": "^1.0.1",
     "keyv": "^3.1.0",
     "leven": "^2.1.0",
     "lodash": "^4.17.11",
+    "mississippi": "^3.0.0",
+    "ndjson": "^1.5.0",
     "talisman": "^0.21.0",
+    "worker-farm": "^1.6.0",
     "written-number": "^0.8.1"
   },
   "devDependencies": {
