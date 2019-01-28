@@ -35,6 +35,7 @@ async function main() {
   }
 
   const sources = process.env.SOURCES.split(',')
+  const licences = process.env.LICENCES ? process.env.LICENCES.split(',') : undefined
 
   const workerFarmOptions = {
     maxConcurrentWorkers: 4,
@@ -62,7 +63,8 @@ async function main() {
       ftthPath,
       balPath,
       departement,
-      sources
+      sources,
+      licences
     })
   }))
 
