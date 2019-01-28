@@ -36,11 +36,14 @@ async function main() {
 
   const sources = process.env.SOURCES.split(',')
   const licences = process.env.LICENCES ? process.env.LICENCES.split(',') : undefined
+  const maxConcurrentWorkers = process.env.MAX_CONCURRENT_WORKERS ?
+    Number.parseInt(process.env.MAX_CONCURRENT_WORKERS, 10) : undefined
+  const maxConcurrentCallsPerWorker = process.env.MAX_CONCURRENT_CALLS_PER_WORKER ?
+    Number.parseInt(process.env.MAX_CONCURRENT_CALLS_PER_WORKER, 10) : 1
 
   const workerFarmOptions = {
-    maxConcurrentWorkers: 4,
-    maxCallsPerWorker: 1,
-    maxConcurrentCallsPerWorker: 1,
+    maxConcurrentWorkers,
+    maxConcurrentCallsPerWorker,
     maxRetries: 0,
     workerOptions: {
       execArgv: ['--max-old-space-size=8192']
