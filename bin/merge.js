@@ -37,7 +37,7 @@ async function main() {
   const sources = process.env.SOURCES.split(',')
   const licences = process.env.LICENCES ? process.env.LICENCES.split(',') : undefined
   const maxConcurrentWorkers = process.env.MAX_CONCURRENT_WORKERS ?
-    Number.parseInt(process.env.MAX_CONCURRENT_WORKERS, 10) : undefined
+    Number.parseInt(process.env.MAX_CONCURRENT_WORKERS, 10) : require('os').cpus().length
   const maxConcurrentCallsPerWorker = process.env.MAX_CONCURRENT_CALLS_PER_WORKER ?
     Number.parseInt(process.env.MAX_CONCURRENT_CALLS_PER_WORKER, 10) : 1
 
