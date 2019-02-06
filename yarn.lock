@@ -340,6 +340,21 @@
     split2 "^3.0.0"
     through2 "^3.0.0"
 
+"@etalab/normadresse@^1.0.4":
+  version "1.0.4"
+  resolved "https://registry.yarnpkg.com/@etalab/normadresse/-/normadresse-1.0.4.tgz#af9bcafc29c90a5efd7b07d8e2b95c18fec467b6"
+  integrity sha512-bI6YtEaCEpcBHW8OFO2gAXYVvtZ2+NIULllUq/pcvDLyoNbHpNrp4nrrt/WxTQSOVI4V8tP58gqmpdFrJiqafg==
+  dependencies:
+    csv-parse "^4.3.1"
+    lodash "^4.17.11"
+
+"@etalab/project-legal@^0.3.3":
+  version "0.3.3"
+  resolved "https://registry.yarnpkg.com/@etalab/project-legal/-/project-legal-0.3.3.tgz#77f9cbfef4e91b55b101582d6035e238b30344c5"
+  integrity sha512-x6AMNofVzYUbJJohgRXggAeetJ9cxBRK9dfr0DgRr9Qk4LWN3a31odJWpsyRFkVyZFuMO8X9SN7upkyR93+MXg==
+  dependencies:
+    proj4 "^2.5.0"
+
 "@keyv/sql@1.1.2":
   version "1.1.2"
   resolved "https://registry.yarnpkg.com/@keyv/sql/-/sql-1.1.2.tgz#1dd84a5c5ad2384df8934f0ddfe20ab81dc2a75d"
@@ -1044,6 +1059,13 @@ code-point-at@^1.0.0:
   resolved "https://registry.yarnpkg.com/code-point-at/-/code-point-at-1.1.0.tgz#0d070b4d043a5bea33a2f1a40e2edb3d9a4ccf77"
   integrity sha1-DQcLTQQ6W+ozovGkDi7bPZpMz3c=
 
+codes-postaux@^3.0.0:
+  version "3.0.0"
+  resolved "https://registry.yarnpkg.com/codes-postaux/-/codes-postaux-3.0.0.tgz#1c5bf7824c8df7f17b2c26ac7c72f2770912a8fd"
+  integrity sha512-sytW/ZXwPDMQsoBKvzIAMj7TilHVA3z+IkSp5HLt0G04OjR6NXM13JxquYFbmUZW71zI0+LZN4dGhxKA26PPxQ==
+  dependencies:
+    lodash "^4.17.5"
+
 collection-visit@^1.0.0:
   version "1.0.0"
   resolved "https://registry.yarnpkg.com/collection-visit/-/collection-visit-1.0.0.tgz#4bc0373c164bc3291b4d368c829cf1a80a59dca0"
@@ -1209,6 +1231,11 @@ crypto-random-string@^1.0.0:
   resolved "https://registry.yarnpkg.com/crypto-random-string/-/crypto-random-string-1.0.0.tgz#a230f64f568310e1498009940790ec99545bca7e"
   integrity sha1-ojD2T1aDEOFJgAmUB5DsmVRbyn4=
 
+csv-parse@^4.3.1:
+  version "4.3.1"
+  resolved "https://registry.yarnpkg.com/csv-parse/-/csv-parse-4.3.1.tgz#b2b92a4068106d6713952050593b2be06ec1a577"
+  integrity sha512-1V98UTtfefu8yKdYIGX1LFhfE2yMllveq2uCBay5y4ybfTzvW6I4M6r8Yc2YnKJdJBUig5ksEMh/bLqKg4vEMQ==
+
 csv-parser@^2.1.0:
   version "2.1.0"
   resolved "https://registry.yarnpkg.com/csv-parser/-/csv-parser-2.1.0.tgz#e42b3c1cdc431b60b75fd38d24eb1685e57bf943"
@@ -1221,6 +1248,15 @@ csv-parser@^2.1.0:
     generate-object-property "^1.0.0"
     minimist "^1.2.0"
     ndjson "^1.4.0"
+
+csv-write-stream@^2.0.0:
+  version "2.0.0"
+  resolved "https://registry.yarnpkg.com/csv-write-stream/-/csv-write-stream-2.0.0.tgz#fc2da21a48d6ea5f8c17fde39cfb911e4f0292b0"
+  integrity sha1-/C2iGkjW6l+MF/3jnPuRHk8CkrA=
+  dependencies:
+    argparse "^1.0.7"
+    generate-object-property "^1.0.0"
+    ndjson "^1.3.0"
 
 currently-unhandled@^0.4.1:
   version "0.4.1"
@@ -3210,6 +3246,11 @@ merge2@^1.2.3:
   resolved "https://registry.yarnpkg.com/merge2/-/merge2-1.2.3.tgz#7ee99dbd69bb6481689253f018488a1b902b0ed5"
   integrity sha512-gdUU1Fwj5ep4kplwcmftruWofEFt6lfpkkr3h860CXbAB9c3hGb55EOL2ali0Td5oebvW0E1+3Sr+Ur7XfKpRA==
 
+mgrs@1.0.0:
+  version "1.0.0"
+  resolved "https://registry.yarnpkg.com/mgrs/-/mgrs-1.0.0.tgz#fb91588e78c90025672395cb40b25f7cd6ad1829"
+  integrity sha1-+5FYjnjJACVnI5XLQLJffNatGCk=
+
 micromatch@^3.1.10, micromatch@^3.1.4:
   version "3.1.10"
   resolved "https://registry.yarnpkg.com/micromatch/-/micromatch-3.1.10.tgz#70859bc95c9840952f359a068a3fc49f9ecfac23"
@@ -3381,7 +3422,7 @@ natural-compare@^1.4.0:
   resolved "https://registry.yarnpkg.com/natural-compare/-/natural-compare-1.4.0.tgz#4abebfeed7541f2c27acfb29bdbbd15c8d5ba4f7"
   integrity sha1-Sr6/7tdUHywnrPspvbvRXI1bpPc=
 
-ndjson@^1.4.0, ndjson@^1.5.0:
+ndjson@^1.3.0, ndjson@^1.4.0, ndjson@^1.5.0:
   version "1.5.0"
   resolved "https://registry.yarnpkg.com/ndjson/-/ndjson-1.5.0.tgz#ae603b36b134bcec347b452422b0bf98d5832ec8"
   integrity sha1-rmA7NrE0vOw0e0UkIrC/mNWDLsg=
@@ -3883,6 +3924,14 @@ progress@^2.0.0:
   version "2.0.3"
   resolved "https://registry.yarnpkg.com/progress/-/progress-2.0.3.tgz#7e8cf8d8f5b8f239c1bc68beb4eb78567d572ef8"
   integrity sha512-7PiHtLll5LdnKIMw100I+8xJXR5gW2QwWYkT6iJva0bXitZKa/XMrSbdmg3r2Xnaidz9Qumd0VPaMrZlF9V9sA==
+
+proj4@^2.5.0:
+  version "2.5.0"
+  resolved "https://registry.yarnpkg.com/proj4/-/proj4-2.5.0.tgz#e3a88ce7e7a07221aaccbc6760dd2eafee745f03"
+  integrity sha512-XZTRT7OPdLzgvtTqL8DG2cEj8lYdovztOwiwpwRSYayOty5Ipf3H68dh/fiL+HKDEyetmQSMhkkMGiJoyziz3w==
+  dependencies:
+    mgrs "1.0.0"
+    wkt-parser "^1.2.0"
 
 proto-props@^1.1.0:
   version "1.1.0"
@@ -5018,6 +5067,11 @@ widest-line@^2.0.0:
   integrity sha512-Ba5m9/Fa4Xt9eb2ELXt77JxVDV8w7qQrH0zS/TWSJdLyAwQjWoOzpzj5lwVftDz6n/EOu3tNACS84v509qwnJA==
   dependencies:
     string-width "^2.1.1"
+
+wkt-parser@^1.2.0:
+  version "1.2.3"
+  resolved "https://registry.yarnpkg.com/wkt-parser/-/wkt-parser-1.2.3.tgz#240fe1dacc816bfe5674b66180041059eaa9a9ba"
+  integrity sha512-s7zrOedGuHbbzMaQOuf8HacuCYp3LmmrHjkkN//7UEAzsYz7xJ6J+j/84ZWZkQcrRqi3xXyuc4odPHj7PEB0bw==
 
 wordwrap@~1.0.0:
   version "1.0.0"
