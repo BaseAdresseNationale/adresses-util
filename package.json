@@ -44,8 +44,8 @@
     "written-number": "^0.8.1"
   },
   "devDependencies": {
-    "ava": "^1.0.1",
-    "xo": "^0.23.0"
+    "ava": "^1.4.1",
+    "xo": "^0.24.0"
   },
   "xo": {
     "semicolon": false,
