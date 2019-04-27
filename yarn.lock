@@ -851,6 +851,11 @@ bluebird@^3.5.3:
   resolved "https://registry.yarnpkg.com/bluebird/-/bluebird-3.5.3.tgz#7d01c6f9616c9a51ab0f8c549a79dfe6ec33efa7"
   integrity sha512-/qKPUQlaW1OyR51WeCPBvRnAlnZFUJkCSG5HzGnuIqhgyJtF+T94lFnn33eiazjRm2LAHVy2guNnaq48X9SJuw==
 
+bluebird@^3.5.4:
+  version "3.5.4"
+  resolved "https://registry.yarnpkg.com/bluebird/-/bluebird-3.5.4.tgz#d6cc661595de30d5b3af5fcedd3c0b3ef6ec5714"
+  integrity sha512-FG+nFEZChJrbQ9tIccIfZJBz3J7mLrAhxakAbnrJWn8d7aKOC+LWifa0G+p4ZqKp4y13T7juYvdhq9NzKdsrjw==
+
 boxen@^1.2.1:
   version "1.3.0"
   resolved "https://registry.yarnpkg.com/boxen/-/boxen-1.3.0.tgz#55c6c39a8ba58d9c61ad22cd877532deb665a20b"
@@ -1317,10 +1322,10 @@ csv-parse@^4.3.1:
   resolved "https://registry.yarnpkg.com/csv-parse/-/csv-parse-4.3.1.tgz#b2b92a4068106d6713952050593b2be06ec1a577"
   integrity sha512-1V98UTtfefu8yKdYIGX1LFhfE2yMllveq2uCBay5y4ybfTzvW6I4M6r8Yc2YnKJdJBUig5ksEMh/bLqKg4vEMQ==
 
-csv-parser@^2.1.0:
-  version "2.1.0"
-  resolved "https://registry.yarnpkg.com/csv-parser/-/csv-parser-2.1.0.tgz#e42b3c1cdc431b60b75fd38d24eb1685e57bf943"
-  integrity sha512-U2kdS/NTK5wyXkFcqxw8xooYgt5AvGHxA9rjKBHryu2cKHygOehThG1+w3dWeJV0RYw3gJ6SsZmMCSU2B9jQrg==
+csv-parser@^2.2.0:
+  version "2.2.0"
+  resolved "https://registry.yarnpkg.com/csv-parser/-/csv-parser-2.2.0.tgz#241dc4d02854f1b05965895219988338240d833a"
+  integrity sha512-d2USCnRP5fSMHEPfVdzIxlk7+zpFlffak5Ad4Ndzm3Nw1rmxBxezpyL4A3FD1g4R+W/cx2TEeKnGdTz49BJyRg==
   dependencies:
     buffer-alloc "^1.1.0"
     buffer-from "^1.0.0"
@@ -1565,10 +1570,10 @@ dot-prop@^4.1.0, dot-prop@^4.2.0:
   dependencies:
     is-obj "^1.0.0"
 
-dotenv@^6.2.0:
-  version "6.2.0"
-  resolved "https://registry.yarnpkg.com/dotenv/-/dotenv-6.2.0.tgz#941c0410535d942c8becf28d3f357dbd9d476064"
-  integrity sha512-HygQCKUBSFl8wKQZBSemMywRWcEDNidvNbjGVyZu3nbZ8qq9ubiPoGLMdRDpfSrpkkm9BXYFkpKxxFX38o/76w==
+dotenv@^7.0.0:
+  version "7.0.0"
+  resolved "https://registry.yarnpkg.com/dotenv/-/dotenv-7.0.0.tgz#a2be3cd52736673206e8a85fb5210eea29628e7c"
+  integrity sha512-M3NhsLbV1i6HuGzBUH8vXrtxOk+tWmzWKDMbAVSUp3Zsjm7ywFeuwrUXhmhQyRK1q5B5GGy7hcXPbj3bnfZg2g==
 
 duplexer3@^0.1.4:
   version "0.1.4"
@@ -2197,7 +2202,7 @@ fragment-cache@^0.2.1:
   dependencies:
     map-cache "^0.2.2"
 
-from2@^2.1.1:
+from2@^2.3.0:
   version "2.3.0"
   resolved "https://registry.yarnpkg.com/from2/-/from2-2.3.0.tgz#8bfb5502bde4a4d36cfdeea007fcca21d7e382af"
   integrity sha1-i/tVAr3kpNNs/e6gB/zKIdfjgq8=
@@ -2315,6 +2320,13 @@ get-stream@^4.0.0, get-stream@^4.1.0:
   version "4.1.0"
   resolved "https://registry.yarnpkg.com/get-stream/-/get-stream-4.1.0.tgz#c1b255575f3dc21d59bfc79cd3d2b46b1c3a54b5"
   integrity sha512-GMat4EJ5161kIy2HevLlr4luNjBgvmj413KaQA7jt4V8B4RDsfpHk7WQ9GVqfYyyx8OS/L66Kox+rJRNklLK7w==
+  dependencies:
+    pump "^3.0.0"
+
+get-stream@^5.1.0:
+  version "5.1.0"
+  resolved "https://registry.yarnpkg.com/get-stream/-/get-stream-5.1.0.tgz#01203cdc92597f9b909067c3e656cc1f4d3c4dc9"
+  integrity sha512-EXr1FOzrzTfGeL0gQdeFEvOMm2mzMOglyiOXSTpPC+iAjAKftbr3jpCMWynogwYnM+eSj9sHGc6wjIcDvYiygw==
   dependencies:
     pump "^3.0.0"
 
@@ -2647,12 +2659,12 @@ inquirer@^6.2.2:
     strip-ansi "^5.1.0"
     through "^2.3.6"
 
-into-stream@^4.0.0:
-  version "4.0.0"
-  resolved "https://registry.yarnpkg.com/into-stream/-/into-stream-4.0.0.tgz#ef10ee2ffb6f78af34c93194bbdc36c35f7d8a9d"
-  integrity sha512-i29KNyE5r0Y/UQzcQ0IbZO1MYJ53Jn0EcFRZPj5FzWKYH17kDFEOwuA+3jroymOI06SW1dEDnly9A1CAreC5dg==
+into-stream@^5.1.0:
+  version "5.1.0"
+  resolved "https://registry.yarnpkg.com/into-stream/-/into-stream-5.1.0.tgz#b05f37d8fed05c06a0b43b556d74e53e5af23878"
+  integrity sha512-cbDhb8qlxKMxPBk/QxTtYg1DQ4CwXmadu7quG3B7nrJsgSncEreF2kwWKZFdnjc/lSNNIkFPsjI7SM0Cx/QXPw==
   dependencies:
-    from2 "^2.1.1"
+    from2 "^2.3.0"
     p-is-promise "^2.0.0"
 
 irregular-plurals@^2.0.0:
@@ -3130,10 +3142,10 @@ latest-version@^3.0.0:
   dependencies:
     package-json "^4.0.0"
 
-leven@^2.1.0:
-  version "2.1.0"
-  resolved "https://registry.yarnpkg.com/leven/-/leven-2.1.0.tgz#c2e7a9f772094dee9d34202ae8acce4687875580"
-  integrity sha1-wuep93IJTe6dNCAq6KzORoeHVYA=
+leven@^3.1.0:
+  version "3.1.0"
+  resolved "https://registry.yarnpkg.com/leven/-/leven-3.1.0.tgz#77891de834064cccba82ae7842bb6b14a13ed7f2"
+  integrity sha512-qsda+H8jTaUaN/x5vzW2rzc+8Rw4TAQ/4KjB46IwK5VH+IlVeeeje/EoZRpiXvIqjFgK84QffqPztGI3VBLG1A==
 
 levn@^0.3.0, levn@~0.3.0:
   version "0.3.0"
@@ -5320,10 +5332,10 @@ write@1.0.3:
   dependencies:
     mkdirp "^0.5.1"
 
-written-number@^0.8.1:
-  version "0.8.1"
-  resolved "https://registry.yarnpkg.com/written-number/-/written-number-0.8.1.tgz#6ca4f248e06f929b46ce3ce9bb4779d18fc95426"
-  integrity sha512-/JsYGK+h7t1aPtaxlm2dMXVsyJTaT0bakDHjdgrpuie3KLjF55J0Qx9u38o2Kt9eMUMuCfsZDwJnjntl0crYUw==
+written-number@^0.9.1:
+  version "0.9.1"
+  resolved "https://registry.yarnpkg.com/written-number/-/written-number-0.9.1.tgz#a400a4d2d6ca2575ad2afc62dc28d2d9f94f5e7e"
+  integrity sha512-tl2EquIdCYnEeGu3p71GRsEJSqnD15CXjVtR6Hl0AFO0PrQ+SATIe3Sf4phaaKwLIuGRzWmA4+sThjJCZqwK1A==
 
 xdg-basedir@^3.0.0:
   version "3.0.0"
