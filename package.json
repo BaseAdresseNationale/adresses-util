@@ -1,6 +1,6 @@
 {
   "name": "@etalab/adresses-util",
-  "version": "0.3.0",
+  "version": "0.4.0",
   "description": "Utilitaires pour traitement des adresses",
   "main": ".",
   "repository": "git@github.com:etalab/adresses-util.git",
