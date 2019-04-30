@@ -2,7 +2,7 @@
   "name": "@etalab/adresses-util",
   "version": "0.3.0",
   "description": "Utilitaires pour traitement des adresses",
-  "main": "index.js",
+  "main": ".",
   "repository": "git@github.com:etalab/adresses-util.git",
   "author": "Jérôme Desboeufs <jerome.desboeufs@data.gouv.fr>",
   "license": "MIT",
