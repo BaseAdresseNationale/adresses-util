@@ -381,6 +381,39 @@
   dependencies:
     arrify "^1.0.1"
 
+"@etalab/adresses-util@^0.4.0":
+  version "0.4.0"
+  resolved "https://registry.yarnpkg.com/@etalab/adresses-util/-/adresses-util-0.4.0.tgz#d4e73dfd2671ae5c70265763d2bebb15bb281098"
+  integrity sha512-VItRGsQVgJBP5gdt56K6d0rD4kBgg012608KdqAnDu7ANXuhrr7SYwCBigBRoDuP6oyjsMUqUmx6K9p5f2y61Q==
+  dependencies:
+    "@etalab/cog" "^0.1.0"
+    "@etalab/fantoir-parser" "^0.1.1"
+    "@etalab/normadresse" "^1.0.4"
+    "@etalab/project-legal" "^0.3.3"
+    "@keyv/sqlite" "^2.0.0"
+    "@turf/distance" "^6.0.1"
+    JSONStream "^1.3.5"
+    bluebird "^3.5.4"
+    buffer-to-stream "^1.0.0"
+    codes-postaux "^3.0.0"
+    csv-parser "^2.2.0"
+    csv-write-stream "^2.0.0"
+    decompress "^4.2.0"
+    dotenv "^7.0.0"
+    fs-extra "^7.0.1"
+    geojson-stream "^0.1.0"
+    get-stream "^5.1.0"
+    gunzip-stream "^1.0.1"
+    into-stream "^5.1.0"
+    keyv "^3.1.0"
+    leven "^3.1.0"
+    lodash "^4.17.11"
+    ndjson "^1.5.0"
+    pumpify "^1.5.1"
+    talisman "^0.21.0"
+    worker-farm "^1.6.0"
+    written-number "^0.9.1"
+
 "@etalab/cog@^0.1.0":
   version "0.1.0"
   resolved "https://registry.yarnpkg.com/@etalab/cog/-/cog-0.1.0.tgz#a54b48600cb4714f46eaba6fc5152104e0465f4a"
@@ -395,6 +428,17 @@
     pumpify "^1.5.1"
     split2 "^3.0.0"
     through2 "^3.0.0"
+
+"@etalab/fantoir@^0.6.0":
+  version "0.6.0"
+  resolved "https://registry.yarnpkg.com/@etalab/fantoir/-/fantoir-0.6.0.tgz#97028864d6b244e7829017cc1811ce2ba7ef0f61"
+  integrity sha512-PeyX4PYPy9LfqWT7L3B65qo5ZWPnZEDfcWgwLSZFrS5rwbfU+vSxEJHzgVFS7r7+1AhO9iqa6RafpwuQyU5jSw==
+  dependencies:
+    "@etalab/adresses-util" "^0.4.0"
+    "@keyv/sqlite" "^2.0.0"
+    keyv "^3.1.0"
+    leven "^3.1.0"
+    lodash "^4.17.11"
 
 "@etalab/normadresse@^1.0.4":
   version "1.0.4"
@@ -512,17 +556,7 @@ acorn@^6.0.7:
   resolved "https://registry.yarnpkg.com/acorn/-/acorn-6.1.1.tgz#7d25ae05bb8ad1f9b699108e1094ecd7884adc1f"
   integrity sha512-jPTiwtOxaHNaAPg/dmrJ/beuzLRnXtB0kQPQ8JpotKJgTB6rX6c8mlf315941pyjBSaPg8NHXS9fhP4u17DpGA==
 
-ajv@^6.5.5:
-  version "6.7.0"
-  resolved "https://registry.yarnpkg.com/ajv/-/ajv-6.7.0.tgz#e3ce7bb372d6577bb1839f1dfdfcbf5ad2948d96"
-  integrity sha512-RZXPviBTtfmtka9n9sy1N5M5b82CbxWIR6HIis4s3WQTXDJamc/0gpCWNGz6EWdWp4DOfjzJfhz/AS9zVPjjWg==
-  dependencies:
-    fast-deep-equal "^2.0.1"
-    fast-json-stable-stringify "^2.0.0"
-    json-schema-traverse "^0.4.1"
-    uri-js "^4.2.2"
-
-ajv@^6.9.1:
+ajv@^6.5.5, ajv@^6.9.1:
   version "6.10.0"
   resolved "https://registry.yarnpkg.com/ajv/-/ajv-6.10.0.tgz#90d0d54439da587cd7e843bfb7045f50bd22bdf1"
   integrity sha512-nffhOpkymDECQyR0mnsUtoCE8RlX38G0rYP+wgLWFyZuUyuuojSSvi/+euOiQBIn63whYwYVIIH1TvE3tu4OEg==
@@ -3435,17 +3469,17 @@ micromatch@^3.1.10, micromatch@^3.1.4:
     snapdragon "^0.8.1"
     to-regex "^3.0.2"
 
-mime-db@~1.37.0:
-  version "1.37.0"
-  resolved "https://registry.yarnpkg.com/mime-db/-/mime-db-1.37.0.tgz#0b6a0ce6fdbe9576e25f1f2d2fde8830dc0ad0d8"
-  integrity sha512-R3C4db6bgQhlIhPU48fUtdVmKnflq+hRdad7IyKhtFj06VPNVdk2RhiYL3UjQIlso8L+YxAtFkobT0VK+S/ybg==
+mime-db@1.40.0:
+  version "1.40.0"
+  resolved "https://registry.yarnpkg.com/mime-db/-/mime-db-1.40.0.tgz#a65057e998db090f732a68f6c276d387d4126c32"
+  integrity sha512-jYdeOMPy9vnxEqFRRo6ZvTZ8d9oPb+k18PKoYNYUe2stVEBPPwsln/qWzdbmaIvnhZ9v2P+CuecK+fpUfsV2mA==
 
 mime-types@^2.1.12, mime-types@~2.1.19:
-  version "2.1.21"
-  resolved "https://registry.yarnpkg.com/mime-types/-/mime-types-2.1.21.tgz#28995aa1ecb770742fe6ae7e58f9181c744b3f96"
-  integrity sha512-3iL6DbwpyLzjR3xHSFNFeb9Nz/M8WDkX33t1GFQnFOllWk8pOrh/LSrB5OXlnlW5P9LH73X6loW/eogc+F5lJg==
+  version "2.1.24"
+  resolved "https://registry.yarnpkg.com/mime-types/-/mime-types-2.1.24.tgz#b6f8d0b3e951efb77dedeca194cff6d16f676f81"
+  integrity sha512-WaFHS3MCl5fapm3oLxU4eYDw77IQM2ACcxQ9RIxfaC3ooc6PFuBMGZZsYpvoXS5D5QTWPieo1jjLdAm3TBP3cQ==
   dependencies:
-    mime-db "~1.37.0"
+    mime-db "1.40.0"
 
 mimic-fn@^1.0.0:
   version "1.2.0"
@@ -4229,9 +4263,9 @@ read-pkg@^3.0.0:
     path-type "^3.0.0"
 
 "readable-stream@2 || 3", readable-stream@^3.0.0:
-  version "3.1.1"
-  resolved "https://registry.yarnpkg.com/readable-stream/-/readable-stream-3.1.1.tgz#ed6bbc6c5ba58b090039ff18ce670515795aeb06"
-  integrity sha512-DkN66hPyqDhnIQ6Jcsvx9bFjhw214O4poMBcIMgPVpQvNy9a0e0Uhg5SqySyDKAmUlwt8LonTBz1ezOnM8pUdA==
+  version "3.3.0"
+  resolved "https://registry.yarnpkg.com/readable-stream/-/readable-stream-3.3.0.tgz#cb8011aad002eb717bf040291feba8569c986fb9"
+  integrity sha512-EsI+s3k3XsW+fU8fQACLN59ky34AZ14LoeVZpYwmZvldCFo0r0gnelwF2TcMjLor/BTL5aDJVBMkss0dthToPw==
   dependencies:
     inherits "^2.0.3"
     string_decoder "^1.1.1"
@@ -4700,9 +4734,9 @@ split2@^2.1.0:
     through2 "^2.0.2"
 
 split2@^3.0.0:
-  version "3.1.0"
-  resolved "https://registry.yarnpkg.com/split2/-/split2-3.1.0.tgz#064bbfac70cdb66f77827870d42f159a8b442201"
-  integrity sha512-ePE1otNQVMnBRyqf3INbZvZwBPGsdBDThgrOWZ6z8zXGNVQNVCSEoOO9aBMTzDN1mXoNSZJ2kHSFH7AA5SPWww==
+  version "3.1.1"
+  resolved "https://registry.yarnpkg.com/split2/-/split2-3.1.1.tgz#c51f18f3e06a8c4469aaab487687d8d956160bb6"
+  integrity sha512-emNzr1s7ruq4N+1993yht631/JH+jaj0NYBosuKmLcq+JkGQ9MmTw1RB1fGaTCzUuseRIClrlSLHRNYGwWQ58Q==
   dependencies:
     readable-stream "^3.0.0"
 
@@ -4729,9 +4763,9 @@ sqlite3@4.0.2:
     request "^2.87.0"
 
 sshpk@^1.7.0:
-  version "1.16.0"
-  resolved "https://registry.yarnpkg.com/sshpk/-/sshpk-1.16.0.tgz#1d4963a2fbffe58050aa9084ca20be81741c07de"
-  integrity sha512-Zhev35/y7hRMcID/upReIvRse+I9SVhyVre/KTJSJQWMz3C3+G+HpO7m1wK/yckEtujKZ7dS4hkVxAnmHaIGVQ==
+  version "1.16.1"
+  resolved "https://registry.yarnpkg.com/sshpk/-/sshpk-1.16.1.tgz#fb661c0bef29b39db40769ee39fa70093d6f6877"
+  integrity sha512-HXXqVUq7+pcKeLqqZj6mHFUMvXtOJt1uoUx09pFW6011inTMxqI8BA8PM95myrIyyKwdnzjdFjLiE6KBPVtJIg==
   dependencies:
     asn1 "~0.2.3"
     assert-plus "^1.0.0"
@@ -4973,12 +5007,11 @@ through2@^2.0.2, through2@^2.0.3:
     xtend "~4.0.1"
 
 through2@^3.0.0:
-  version "3.0.0"
-  resolved "https://registry.yarnpkg.com/through2/-/through2-3.0.0.tgz#468b461df9cd9fcc170f22ebf6852e467e578ff2"
-  integrity sha512-8B+sevlqP4OiCjonI1Zw03Sf8PuV1eRsYQgLad5eonILOdyeRsY27A/2Ze8IlvlMvq31OH+3fz/styI7Ya62yQ==
+  version "3.0.1"
+  resolved "https://registry.yarnpkg.com/through2/-/through2-3.0.1.tgz#39276e713c3302edf9e388dd9c812dd3b825bd5a"
+  integrity sha512-M96dvTalPT3YbYLaKaCuwu+j06D/8Jfib0o/PxbVt6Amhv3dUAtW6rTV1jPgJSBG83I/e04Y6xkVdVhSRhi0ww==
   dependencies:
     readable-stream "2 || 3"
-    xtend "~4.0.1"
 
 "through@>=2.2.7 <3", through@^2.3.4, through@^2.3.6:
   version "2.3.8"
