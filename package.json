@@ -15,14 +15,14 @@
     "test": "xo && ava"
   },
   "dependencies": {
-    "@turf/distance": "^6.0.1",
+    "@turf/distance": "^6.3.0",
     "leven": "^3.1.0",
-    "lodash": "^4.17.15",
-    "talisman": "^0.21.0",
+    "lodash": "^4.17.20",
+    "talisman": "^1.1.4",
     "written-number": "^0.9.1"
   },
   "devDependencies": {
-    "ava": "^2.3.0",
+    "ava": "^3.15.0",
     "xo": "^0.24.0"
   },
   "xo": {
