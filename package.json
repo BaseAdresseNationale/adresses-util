@@ -1,18 +1,22 @@
 {
-  "name": "@etalab/adresses-util",
+  "name": "@ban-team/adresses-util",
   "version": "0.8.2",
   "description": "Utilitaires pour traitement des adresses",
   "main": ".",
-  "repository": "git@github.com:etalab/adresses-util.git",
+  "repository": "http://github.com/BaseAdresseNationale/adresses-util",
   "author": "Jérôme Desboeufs <jerome.desboeufs@data.gouv.fr>",
   "license": "MIT",
   "private": false,
   "publishConfig": {
     "access": "public"
   },
+  "files": [
+    "lib",
+    "index.js"
+  ],
   "scripts": {
-    "merge": "node bin/merge.js",
-    "test": "xo && ava"
+    "lint": "xo",
+    "test": "ava"
   },
   "dependencies": {
     "@turf/distance": "^6.3.0",
@@ -30,6 +34,6 @@
     "space": 2
   },
   "engines": {
-    "node": ">= 8"
+    "node": ">= 12"
   }
 }
